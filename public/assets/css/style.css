@@ -1,0 +1,23 @@
+body{
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+}
+#wrapper{
+    background:rgb(223, 218, 218);
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:5%;
+}
+#articles{
+    display:inline-block;
+    overflow:auto;
+    widows: 60%;
+    height:700px;
+}
+#notes{
+    float:right;
+    width:30%;
+}
