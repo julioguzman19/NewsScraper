@@ -15,7 +15,7 @@ body {
   display: inline-block;
   overflow: auto;
   widows: 60%;
-  height: 700px;
+  height: 200px;
 }
 #notes {
   float: right;
