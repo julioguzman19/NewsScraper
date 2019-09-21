@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/espnDB", { useNewUrlParser: true });
 
 // Routes
 
@@ -66,7 +66,12 @@ app.get("/scrape", function(req, res) {
     // Send a message to the client
     res.send("Scrape Complete");
   });
-});
+}); 
+
+
+
+
+
 
 // Route for getting all Articles from the db
 app.get("/articles", function(req, res) {
