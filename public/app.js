@@ -1,6 +1,7 @@
 // Grab the articles as a json
 $.getJSON("/articles", function(data) {
   // For each one
+  
   for (var i = 0; i < 10; i++) {
     // Display the apropos information on the page
     $("#article").append(
@@ -81,7 +82,7 @@ $(document).on("click", "#savenote", function() {
 
 $(document).on("click", "#scrapeButton", function() {
  $.get("/scrape", function(data) {
-   console.log(data);
+   
    if(data === "Scrape Complete") {
      window.location.reload()
    }
